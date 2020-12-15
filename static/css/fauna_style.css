@@ -1,0 +1,142 @@
+@font-face {
+    font-family: winterKei;
+    src: url(../fonts/winterKei.ttf);
+}
+
+@font-face {
+    font-family: louis;
+    src: url(../fonts/louis.ttf);
+}
+@font-face {
+    font-family: Animal;
+    src: url(../fonts/Animal.otf);
+}
+html{
+    background: -webkit-linear-gradient(to left,#d152f9,#6f54f8);
+    background: linear-gradient(to left,#d152f9,#6f54f8); 
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    float: None;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+font {
+    font-size: 6vmax;
+    transition: .25s;
+    font-variant: initial;
+    font-family: winterKei;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    text-shadow: 0px 0px 3vh #03d3e2;
+}
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: wrap;
+
+}
+h4 {
+    font-size: 3.8vh;
+    background: -webkit-Radial-gradient(ellipse at bottom right,#eb553e,#0c3a51);
+    background: Radial-gradient(ellipse at bottom right,#eb553e,#0c3a51); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-family: louis;
+}
+p {
+    background: -webkit-Radial-gradient(ellipse at bottom right,#eb553e,#0c3a51);
+    background: Radial-gradient(ellipse at bottom right,#eb553e,#0c3a51); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card
+{
+    position: relative;
+    max-width: 20vw;
+    height: 25vh;
+    background: -webkit-linear-gradient(to right,#d0e4f4,#08c7bd);
+    background: linear-gradient(to right,#d0e4f4,#08c7bd); 
+    margin: 30px 10px;
+    padding: 20px 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 .5vh 5vw rgb(165, 172, 235);
+    transition: 0.3s ease-in-out;
+    
+}
+.card .content
+{
+    position: relative;
+    margin-top: -14vh;
+    padding: 1vw 2vh;
+    text-align: center;
+    color: lightcyan;
+    visibility: hidden;
+    font-family: louis;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+h2 {
+    color: lightcoral;
+    text-transform: uppercase;
+    font-family: Animal;
+}
+img{
+    max-height: 25vh;
+    max-width: 20vw;
+}
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin: -3vh;
+    transition-delay: 0.3s;
+}
+.card:hover
+{
+    height: 100%;
+    background: -webkit-radial-gradient(ellipse at top,#39f5d0,#b8f5c0);
+    background: radial-gradient(ellipse at top,#39f5d0,#b8f5c0); 
+}
+.box input[type="submit"] {
+    font-family: winterKei;
+    width: 13vmax;
+    overflow: hidden;
+    border: 1px solid transparent;
+    padding: 1.5%;
+    font-size: 0.9vmax;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(to left,#81ee53,#d0ed03);
+    background: linear-gradient(to left,#81ee53,#d0ed03); 
+    color: rgb(236, 9, 9);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    outline: None;
+}
+i {
+    text-transform: lowercase;
+    font-family: louis;
+    font-size: 2.4vh;
+    color: rgb(255, 0, 76);
+}
+.box input[type="submit"]:hover,
+    .box input[type="submit"]:focus {
+        background: -webkit-Linear-gradient(to right,#64f4b4,#d3fbfa);
+        background: Linear-gradient(to right,#64f4b4,#d3fbfa);  
+        color: #51e00e;
+        outline: rgb(235, 219, 7);
+        -webkit-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+    }

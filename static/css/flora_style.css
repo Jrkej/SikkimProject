@@ -1,0 +1,144 @@
+@font-face {
+    font-family: winterKei;
+    src: url(../fonts/winterKei.ttf);
+}
+
+@font-face {
+    font-family: louis;
+    src: url(../fonts/louis.ttf);
+}
+@font-face {
+    font-family: FairyTale;
+    src: url(../fonts/FairyTale.ttf);
+}
+
+html{
+    background: -webkit-linear-gradient(to right,#d0e4f4,#08c7bd);
+background: linear-gradient(to right,#d0e4f4,#08c7bd);  
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    float: None;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+font {
+    font-size: 6vmax;
+    transition: .25s;
+    font-variant: initial;
+    font-family: winterKei;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    text-shadow: 0px 0px 3vh #03d3e2;
+}
+.container
+{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: wrap;
+
+}
+h4 {
+    font-size: 3.4vh;
+    background: -webkit-radial-gradient(ellipse at top left,#fc6733,#f877ed);
+    background: radial-gradient(ellipse at top left,#fc6733,#f877ed); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: louis;
+}
+i {
+    text-transform: lowercase;
+    font-family: louis;
+    font-size: 2.4vh;
+    color: darkorange;
+}
+p {
+    background: -webkit-Radial-gradient(ellipse at bottom right,#51411b,#0e0512);
+    background: Radial-gradient(ellipse at bottom right,#51411b,#0e0512); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card
+{
+    position: relative;
+    max-width: 20vw;
+    height: 25vh;
+    background: -webkit-linear-gradient(to right,#f96bac,#fe944a);
+    background: linear-gradient(to right,#f96bac,#fe944a); 
+    margin: 30px 10px;
+    padding: 20px 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 .5vh 5vw #70ecb8;
+    transition: 0.3s ease-in-out;
+    
+}
+.card .content
+{
+    position: relative;
+    margin-top: -14vh;
+    padding: 1vw 2vh;
+    text-align: center;
+    color: lightcyan;
+    visibility: hidden;
+    font-family: louis;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+h2 {
+    color: rgb(21, 236, 243);
+    font-size: 6vh;
+    font-family: FairyTale;
+}
+img{
+    max-height: 25vh;
+    max-width: 20vw;
+}
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin: -3vh;
+    transition-delay: 0.3s;
+}
+.card:hover
+{
+    height: 100%;
+    background: -webkit-Linear-gradient(to Left,#566171,#FF6A6C);
+    background: Linear-gradient(to Left,#566171,#FF6A6C);
+}
+.box input[type="submit"] {
+    font-family: winterKei;
+    width: 13vmax;
+    overflow: hidden;
+    border: 1px solid transparent;
+    padding: 1.5%;
+    font-size: 0.9vmax;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(to left,#81ee53,#d0ed03);
+    background: linear-gradient(to left,#81ee53,#d0ed03); 
+    color: rgb(236, 9, 9);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    outline: None;
+}
+.box input[type="submit"]:hover,
+    .box input[type="submit"]:focus {
+        background: -webkit-Linear-gradient(to right,#64f4b4,#d3fbfa);
+        background: Linear-gradient(to right,#64f4b4,#d3fbfa);  
+        color: #51e00e;
+        outline: rgb(235, 219, 7);
+        -webkit-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+    }

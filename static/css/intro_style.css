@@ -1,0 +1,75 @@
+@font-face {
+    font-family: winterKei;
+    src: url(../fonts/winterKei.ttf);
+}
+
+@font-face {
+    font-family: louis;
+    src: url(../fonts/louis.ttf);
+}
+html {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    background-position: center center;
+    background: -webkit-Linear-gradient(to Right,#FD00FF,#01DADF);
+    background: Linear-gradient(to Right,#FD00FF,#01DADF); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    float: None;
+}
+font {
+    font-size: 6vmax;
+    transition: .25s;
+    font-variant: initial;
+    font-family: winterKei;
+    background: -webkit-linear-gradient(to left,#fa1b33,#f14e9e);
+    background: linear-gradient(to left,#fa1b33,#f14e9e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 20px #ecf757;
+}
+p {
+    font-size: 5vh;
+    background: -webkit-Radial-gradient(ellipse at bottom right,#66374b,#0c3a51);
+    background: Radial-gradient(ellipse at bottom right,#66374b,#0c3a51); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: louis;
+}
+h1 {
+    font-size: 6vmin;
+    transition: .25s;
+    font-variant: initial;
+    font-family: winterKei;
+    color: rgb(221, 71, 2);
+    text-shadow: 0px 0px 20px #ecf757;
+}
+.box input[type="submit"] {
+    font-family: winterKei;
+    width: 13vmax;
+    overflow: hidden;
+    border: 1px solid transparent;
+    padding: 1.5%;
+    font-size: 0.9vmax;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(to left,#81ee53,#d0ed03);
+    background: linear-gradient(to left,#81ee53,#d0ed03); 
+    color: rgb(236, 9, 9);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    outline: None;
+}
+.box input[type="submit"]:hover,
+    .box input[type="submit"]:focus {
+        background: -webkit-Linear-gradient(to right,#64f4b4,#d3fbfa);
+        background: Linear-gradient(to right,#64f4b4,#d3fbfa);  
+        color: #51e00e;
+        outline: rgb(235, 219, 7);
+        -webkit-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+    }
