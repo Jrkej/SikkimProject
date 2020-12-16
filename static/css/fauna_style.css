@@ -126,7 +126,6 @@ img{
     outline: None;
 }
 i {
-    text-transform: lowercase;
     font-family: louis;
     font-size: 2.4vh;
     color: rgb(255, 0, 76);
